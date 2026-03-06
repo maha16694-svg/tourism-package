@@ -28,12 +28,12 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Install Dependencies
-        run: pip install -r tourism-package/deployment/requirements.txt
+        run: pip install -r tourism_project/deployment/requirements.txt
 
       - name: Run Data Preparation
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: python tourism-package/experimentation/data_prep.py
+        run: python tourism_project/experimentation/data_prep.py
 
 
   model-training:
@@ -43,7 +43,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Install Dependencies
-        run: pip install -r tourism-package/deployment/requirements.txt
+        run: pip install -r tourism_project/deployment/requirements.txt
 
       - name: Start MLflow Server
         run: |
@@ -53,7 +53,7 @@ jobs:
       - name: Model Training
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: python tourism-package/model_building/train.py
+        run: python tourism_project/model_building/train.py
 
 
   deploy-hosting:
@@ -63,9 +63,9 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Install Dependencies
-        run: pip install -r tourism-package/deployment/requirements.txt
+        run: pip install -r tourism_project/deployment/requirements.txt
 
       - name: Push files to Hugging Face Space
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: python tourism-package/deployment/hosting.py
+        run: python tourism_project/deployment/hosting.py
