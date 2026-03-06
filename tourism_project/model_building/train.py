@@ -37,10 +37,10 @@ api = HfApi()
 # Load Data from Hugging Face Dataset
 # --------------------------------------------------
 
-Xtrain_path = "hf://datasets/maha16694-svg/tourism-package/Xtrain.csv"
-Xtest_path = "hf://datasets/maha16694-svg/tourism-package/Xtest.csv"
-ytrain_path = "hf://datasets/maha16694-svg/tourism-package/ytrain.csv"
-ytest_path = "hf://datasets/maha16694-svg/tourism-package/ytest.csv"
+Xtrain_path = "hf://datasets/maha16694/tourism-package/Xtrain.csv"
+Xtest_path = "hf://datasets/maha16694/tourism-package/Xtest.csv"
+ytrain_path = "hf://datasets/maha16694/tourism-package/ytrain.csv"
+ytest_path = "hf://datasets/maha16694/tourism-package/ytest.csv"
 
 Xtrain = pd.read_csv(Xtrain_path)
 Xtest = pd.read_csv(Xtest_path)
