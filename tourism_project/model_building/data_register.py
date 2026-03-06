@@ -1,7 +1,7 @@
 
 from huggingface_hub import HfApi
 
-repo_id = "maha16694-svg/tourism-package"
+repo_id = "maha16694/tourism-package"
 
 api = HfApi()
 
