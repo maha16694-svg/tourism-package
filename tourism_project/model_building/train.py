@@ -149,7 +149,6 @@ mlflow.log_metrics({
 
 print("Train Accuracy:", train_report['accuracy'])
 print("Test Accuracy:", test_report['accuracy'])
-```
 
 # -----------------------------
 # 12. Save Model
