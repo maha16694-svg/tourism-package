@@ -6,7 +6,7 @@ import joblib
 
 # Download model from Hugging Face Model Hub
 model_path = hf_hub_download(
-    repo_id="maha16694-svg/tourism-package",
+    repo_id="maha16694/tourism-package-model",
     filename="tourism_package_model.joblib"
 )
 
