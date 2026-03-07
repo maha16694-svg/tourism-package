@@ -119,7 +119,6 @@ model_pipeline = make_pipeline(preprocessor, rf_model)
 
 with mlflow.start_run():
 
-```
 grid_search = GridSearchCV(
     model_pipeline,
     param_grid,
