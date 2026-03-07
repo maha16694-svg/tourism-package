@@ -9,7 +9,7 @@ from sklearn.pipeline import make_pipeline
 # Model training
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import GridSearchCV, train_test_split
-from sklearn.metrics import classification_report
+from sklearn.metrics import classification_report 
 
 # Model saving
 import joblib
